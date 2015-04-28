@@ -131,9 +131,6 @@ footer
 		.LandingBadge-container
 			position:relative;
 			margin:0px;
-			.LandingBadge-item
-				width: 146px;
-				height: 146px;
 		.LandingLevel
 			background-image:url('https://raw.githubusercontent.com/soru13/Eduardo/gh-pages/img/sprite.b920f55fd5ae.png');
 			background-position: 0 -20.5px;
@@ -168,11 +165,35 @@ footer
 		padding-left: 35px;
 @media screen and (max-width: 480px)
 	.landingBanner-right
-		width: 334px;
+		width: 300px;
+	.LandingBanner-left
+		width: 100px;
+	.LandingBadge-item
+		width: 100px;
+		height: 100px;
 		h1
 			margin-bottom: 27px;
 	.block
 		width: 100%;
+@media screen and (min-width: 480px)
+	.landingBanner-right
+		width: 300px;
+	.LandingBanner-left
+		width: 100px;
+	.LandingBadge-item
+		width: 100px;
+		height: 100px;
+		h1
+			margin-bottom: 27px;
+	.block
+		width: 100%;
+@media screen and (min-width: 640px)
+	.landingBanner-right
+		float: left;
+		width: 480px;
+		padding-left: 35px;
+		.LandingBanner-left
+			width:146px;
 @media screen and (min-width: 1024px)
 	.landingBanner-right
 		float:right;
@@ -180,6 +201,9 @@ footer
 		padding-left: 57px;
 	.block
 		width:30%;
+	.LandingBadge-item
+		width: 146px;
+		height: 146px;
 
 /*<<<<<<<<<<<<<<<<<<<<<<<end imgFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*<<<<<<<<<<<<<<<<<<<<<<<myKnowledgeFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
