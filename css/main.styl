@@ -49,8 +49,7 @@ footer
 		border-radius  0px
 		background  rgba(255,255,255,0.5)
 		border-style  none
-		& hover
-			background-color  rgba(4, 4, 4, 0.5)
+		&:hover{background-color:  rgba(4, 4, 4, 0.5);}
 /*media Query principal airbnb*/
 @media screen and (max-width  480px)
 	#imgDevices
@@ -73,7 +72,6 @@ footer
 		display block
 	#imagPrincipal
 		display none
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<menu>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 #menu
 	position fixed
@@ -86,14 +84,18 @@ footer
 	a
 		color black
 		text-decoration none
-		& hover
+		cursor pointer
+		&:hover
 			color gray
+			cursor pointer
 	.menu
 		display inline-block
 		vertical-align top
 		margin-top  6px
 		float right
 		margin-right  3%
+		&:hover
+			cursor pointer
 	#brand
 		float  left
 		margin-left  20px
@@ -104,9 +106,33 @@ footer
 /*<<<<<<<<<<<<<<<<<<<<<<<<aboutme>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 #aboutme
 	text-align center
+	height 284px
+	background-color #8c8b87
+	h1
+		padding-top 20px
+		margin-bottom 10px
+		margin-top 0px
+	#yo
+		top -69px
+		float right
+		text-align right
+	.yo
+		height 284px
+		width 45%
 	.block
 		display inline-block
 		position relative
+	#yophoto
+		font-family 'Shadows Into Light', cursive
+		font-size 27px
+		color white
+		position absolute
+		float right
+		right 174px
+		margin-top 48px
+		width 300px
+		span
+			font-size 16px
 /*<<<<<<<<<<<<<<<<<<<<<<<<end aboutme>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*<<<<<<<<<<<<<<<<<<<<<<<imgFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 #imgFrontend
@@ -140,10 +166,10 @@ footer
 		text-align left
 		display block
 		position relative
-
 /*media Query principal airbnb*/
-
 @media screen and (max-width  1023px)
+	.yo
+		display none
 	.landingBanner-right
 		padding-left  168px
 @media screen and (max-width  640px)
@@ -201,7 +227,6 @@ footer
 	.LandingBadge-item
 		width  146px
 		height  146px
-
 /*<<<<<<<<<<<<<<<<<<<<<<<end imgFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*<<<<<<<<<<<<<<<<<<<<<<<myKnowledgeFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .LandingSummary-container
@@ -240,9 +265,7 @@ footer
 				top  0
 				font-weight  bold
 /*<<<<<<<<<<<<<<<<<<<<<<<end myKnowledgeFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 /*<<<<<<<<<<<<<<<<<<<<<<<imgBackend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 #imgBackend
 	display block
 	width 100%
@@ -252,10 +275,8 @@ footer
 	background-position  center
 	background-image url('https://raw.githubusercontent.com/soru13/Eduardo/gh-pages/img/backend_cover.jpg')
 	padding-top  152px
-
 /*<<<<<<<<<<<<<<<<<<<<<<<end imgBackend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*<<<<<<<<<<<<<<<<<<<<<<<imgStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 #imgStrategy
 	display block
 	width 100%
@@ -265,10 +286,8 @@ footer
 	background-position  center
 	background-image url('https://static.platzi.com/media/courses/marketing_cover.jpg')
 	padding-top  152px
-
 /*<<<<<<<<<<<<<<<<<<<<<<<end imgStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*<<<<<<<<<<<<<<<<<<<<<<<imgIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 #imgIOS
 	display block
 	width 100%
@@ -278,10 +297,7 @@ footer
 	background-position  center
 	background-image url('https://static.platzi.com/media/courses/ios_cover.jpg')
 	padding-top  152px
-
 /*<<<<<<<<<<<<<<<<<<<<<<<end imgIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<Contact>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .Contact-title
 	font-weight  bold
@@ -328,7 +344,6 @@ footer
 	p
 		display inline-block
 		margin-left 1%
-
 /*<<<<<<<<<<<<<<<<<<<<<<<end growht myKnowledgeStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .texleft
 	text-align left
@@ -342,8 +357,7 @@ footer
 	margin-bottom 48px
 .up
 	margin-left 5px
-	& hover
-		color gray
+	&:hover{color: gray;}
 .redondeo
 	border-radius 50%
 	position relative
@@ -352,9 +366,8 @@ footer
 	height 16px
 .CourseList-courseLevel
 	background-image url('https://raw.githubusercontent.com/soru13/Eduardo/gh-pages/img/sprite.952c58080534.png')
-	background-position  0 -26.5px
+	backround-position  0 -26.5px
 	width  38.5px
 	height  21.5px
 	margin  0px auto
-.colordark
-	background-color  darkslategray
+.colordark{background-color:darkslategray;}
